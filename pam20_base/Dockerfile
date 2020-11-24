@@ -1,7 +1,8 @@
 FROM fedora:32
-RUN dnf -y install util-linux-user vim finger passwd 
+RUN dnf -y install procs util-linux-user vim finger passwd cracklib-dicts pam_mount nfs-utils 
 RUN mkdir /opt/docker
-COPY . /opt/docker
+COPY * /opt/docker
+RUN chmod +x /opt/docker/startup.sh
 WORKDIR /opt/docker
-CMD [ "/bin/bash", "opt/docker/install.sh" ]
+CMD [ "/bin/bash", "opt/docker/startup.sh" ]
 
