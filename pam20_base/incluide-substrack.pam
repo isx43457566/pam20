@@ -1,0 +1,7 @@
+#%PAM-1.0
+
+auth	optional	pam_echo.so [ abans de cridar l'auxiliar ]
+auth	substrack	auxiliar.pam
+auth	optional	pam_echo.so [ després de cridar-lo ]
+auth	sufficient	pam_permit.so
+account	sufficient	pam_permit.so
