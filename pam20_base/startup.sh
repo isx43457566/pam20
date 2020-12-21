@@ -1,10 +1,11 @@
 #! /bin/bash
-useradd anna
-useradd pere
-useradd pau
-echo "anna" | passwd --stdin anna
-echo "pere" | passwd --stdin pere
-echo "pau" | passwd --stdin pau
+
+useradd unix01
+useradd unix02
+useradd unix03
+echo -e "unix01\nunix01\n" | passwd --stdin unix01
+echo -e "unix01\nunix02\n" | passwd --stdin unix02
+echo -e "unix01\nunix03\n" | passwd --stdin unix03
 
 cp /opt/docker/login.defs /etc/login.defs
 /bin/bash
