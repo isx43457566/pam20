@@ -33,7 +33,7 @@ Imatges:
    	 # Test pamwarare.py
    	 python3 /opt/docker/pamaware.py
 
-    · isx43457566/pam20:auth host pam que configura l'autenticació unix i ldap usant authconfig. Es crea automàticament el directori home dels usuaris de ldap (filtrat per uid) i es munta un recurs tmpfs de 100MB.
+    ·isx43457566/pam20:auth host pam que configura l'autenticació unix i ldap usant authconfig. Es crea automàticament el directori home dels usuaris de ldap (filtrat per uid) i es munta un recurs tmpfs de 100MB.
 
     Atenció: fabricat usant Fedora-27 en lloc de Fedora-32 per usar authconfig en lloc de authselect
 
